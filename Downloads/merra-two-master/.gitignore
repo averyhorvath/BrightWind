@@ -1,0 +1,7 @@
+/cassandra
+/merra/*.csv
+*.zip
+.DS_Store
+/test
+/log/forecast-ml.log
+*.pyc
