@@ -7,14 +7,13 @@ from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 
 auth_provider = PlainTextAuthProvider(
-        username='brightdata_app', password='GaLe-GwEeHa_2')
-
+        username='username', password='password') # this is an example but username and password
+                                                  # should not be coded into the script itself 
 KEYSPACE = "merra_two"
 
 def main():
     
-    # cluster = Cluster(['54.72.166.123'], port = 9042, auth_provider=auth_provider)
-    cluster = Cluster(['127.0.0.1'], port = 9042)
+    cluster = Cluster(['127.0.0.1'], port = 9042) # for localhost
 
     session = cluster.connect()
 
